@@ -1,5 +1,6 @@
 # Courses
 Source code of projects related to courses taught by LT (also student projects)
+In general consider to add projects as _git submodules_
 
 ## Working with submodules using `watson_speechandtext_demo` as example:
 
