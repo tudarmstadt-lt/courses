@@ -5,27 +5,32 @@ In general consider to add projects as _git submodules_. Submodules appear as fo
 ## Working with submodules using `watson_speechandtext_demo` as example:
 
 - clone courses repository 
-
-    `$ git clone https://github.com/tudarmstadt-lt/courses.git courses-lt`
+    ```
+$ git clone https://github.com/tudarmstadt-lt/courses.git courses-lt
+    ```
 
 - add submodule
-
-    `courses-lt/qa-examples$ git submodule add https://github.com/remstef/WatsonSpeechTextDemo.git watson_speechandtext_demo`
-
+    ```
+courses-lt/qa-examples$ git submodule add https://github.com/remstef/WatsonSpeechTextDemo.git watson_speechandtext_demo
+    ```
+    
 - clone submodules, after main repository was cloned already
-
-    `courses-lt/qa-examples/watson_speechandtext_demo$ git submodule init`
-    `courses-lt/qa-examples/watson_speechandtext_demo$ git submodule update`
+    ```
+courses-lt/qa-examples/watson_speechandtext_demo$ git submodule init
+courses-lt/qa-examples/watson_speechandtext_demo$ git submodule update
+    ```
 
 - clone project incl. submodules
-
-    `$ git clone --recursive https://github.com/tudarmstadt-lt/courses.git courses-lt`
+    ```
+$ git clone --recursive https://github.com/tudarmstadt-lt/courses.git courses-lt
+    ```
     
 - within the submodule folder everything is standard git and refers to the remote repository of the submodule, e.g. `git pull`, to update the contents from `remstef/WatsonSpeechTextDemo` or `git commit` and `git push` to push edited content to `remstef/WatsonSpeechTextDemo`.
 
 - sync new content from the submodule's repository with the main repository (pull changes, commit updates, push changes)
-
-    `courses-lt/qa-examples/watson_speechandtext_demo$ git pull`
-    `courses-lt/qa-examples$ git commit watson_speechandtext_demo -m 'updated submodule'`
-    `courses-lt/qa-examples$ git push`
+    ```
+courses-lt/qa-examples/watson_speechandtext_demo$ git pull
+courses-lt/qa-examples$ git commit watson_speechandtext_demo -m 'updated submodule'
+courses-lt/qa-examples$ git push
+    ```
     
