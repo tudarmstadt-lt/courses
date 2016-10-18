@@ -40,3 +40,4 @@ $ git clone --recursive https://github.com/tudarmstadt-lt/courses.git courses-lt
 
 - Find further information on submodules here: https://git-scm.com/book/en/v2/Git-Tools-Submodules
 - **In any place of the hierarchy, type `git remote -v` in order to see the remote path of the current git related commands!**
+- For an overview of submodules in check `.gitmodules` file in the root directory of the repository
