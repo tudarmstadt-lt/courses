@@ -33,8 +33,8 @@ courses-lt/qa-examples$ git push
     
 - Note, when you clone `tudarmstadt-lt/courses`, the submodules are not cloned, they appear as empty folders. Run step `3.` to pull the content. Alternatively you can add the `--recursive` switch to the `git clone` command in order to tell git to checkout also the submodules.
 
-- Find further information on submodules here: https://git-scm.com/book/en/v2/Git-Tools-Submodules
     ```
 $ git clone --recursive https://github.com/tudarmstadt-lt/courses.git courses-lt
     ```
-    
+
+- Find further information on submodules here: https://git-scm.com/book/en/v2/Git-Tools-Submodules
