@@ -24,8 +24,9 @@ courses-lt/qa-examples/watson_speechandtext_demo$ git pull
 courses-lt/qa-examples$ git commit watson_speechandtext_demo -m 'updated submodule'
 courses-lt/qa-examples$ git push
     ```
-    
-- Note, when you clone `tudarmstadt-lt/courses`, the submodules are not cloned, they appear as empty folders. Run the following commands to pull the content: 
+
+### Notes
+- When you clone `tudarmstadt-lt/courses`, the submodules are not cloned, they appear as empty folders. Run the following commands to pull the content: 
     ```
 courses-lt/qa-examples/watson_speechandtext_demo$ git submodule init
 courses-lt/qa-examples/watson_speechandtext_demo$ git submodule update
@@ -38,5 +39,4 @@ $ git clone --recursive https://github.com/tudarmstadt-lt/courses.git courses-lt
     ```
 
 - Find further information on submodules here: https://git-scm.com/book/en/v2/Git-Tools-Submodules
-- **Note, in any place of the hierarchy, type `git remote -v` in order to see the remote path of the current git related commands!**
-
+- **In any place of the hierarchy, type `git remote -v` in order to see the remote path of the current git related commands!**
