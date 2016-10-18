@@ -20,3 +20,5 @@ In general consider to add projects as _git submodules_
 - clone project incl. submodules
 
     `$ git clone --recursive https://github.com/tudarmstadt-lt/courses.git`
+    
+- within the submodule folder everything is standard git again, e.g. `git pull` to update the contents from the remote repository of the submodule
