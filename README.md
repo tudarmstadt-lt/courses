@@ -1,4 +1,5 @@
 # Courses
+Source code of projects related to courses taught by LT (also student projects)
 
 ## Working with submodules using `watson_speechandtext_demo` as example:
 
