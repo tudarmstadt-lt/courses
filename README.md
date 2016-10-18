@@ -4,6 +4,8 @@ In general consider to add projects as _git submodules_. Submodules appear as fo
 
 ## Working with submodules using `watson_speechandtext_demo` as example:
 
+goal: have `remstef/WatsonSpeechTextDemo` as a submodule in `tudarmstadt-lt/courses/qa-examples/watson_speechandtext_demo`
+
 - clone courses repository 
     ```
 $ git clone https://github.com/tudarmstadt-lt/courses.git courses-lt
