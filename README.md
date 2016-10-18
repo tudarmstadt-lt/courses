@@ -1,4 +1,4 @@
-# Courses
+# LT Courses Code Repository
 Source code of projects related to courses taught by LT (also student projects)
 In general consider to add projects as _git submodules_. Submodules appear as folders in the git repository hierarchy (although with a changed icon in github) and refer to other git repositories, which might be private.
 
