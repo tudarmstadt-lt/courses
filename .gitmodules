@@ -1,3 +1,9 @@
 [submodule "qa-examples/watson_speechandtext_demo"]
 	path = qa-examples/watson_speechandtext_demo
 	url = https://github.com/remstef/WatsonSpeechTextDemo.git
+[submodule "qa-examples/jwatson"]
+	path = qa-examples/jwatson
+	url = https://github.com/tudarmstadt-lt/jwatson
+[submodule "qa-examples/watsondemo"]
+	path = qa-examples/watsondemo
+	url = https://github.com/tudarmstadt-lt/watsondemo.git
