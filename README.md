@@ -21,4 +21,11 @@ In general consider to add projects as _git submodules_. Submodules appear as fo
 
     `$ git clone --recursive https://github.com/tudarmstadt-lt/courses.git courses-lt`
     
-- within the submodule folder everything is standard git again, e.g. `git pull` to update the contents from the remote repository of the submodule
+- within the submodule folder everything is standard git and refers to the remote repository of the submodule, e.g. `git pull`, to update the contents from `remstef/WatsonSpeechTextDemo` or `git commit` and `git push` to push edited content to `remstef/WatsonSpeechTextDemo`.
+
+- sync new content from the submodule's repository with the main repository (pull changes, commit updates, push changes)
+
+    `courses-lt/qa-examples/watson_speechandtext_demo$ git pull`
+    `courses-lt/qa-examples$ git commit watson_speechandtext_demo -m 'updated submodule'`
+    `courses-lt/qa-examples$ git push`
+    
