@@ -28,8 +28,8 @@ courses-lt/qa-examples$ git push
 ### Notes
 - When you clone `tudarmstadt-lt/courses`, the submodules are not cloned, they appear as empty folders. Run the following commands to pull the content: 
     ```
-courses-lt/qa-examples/watson_speechandtext_demo$ git submodule init
-courses-lt/qa-examples/watson_speechandtext_demo$ git submodule update
+$ git submodule init
+$ git submodule update
     ```
 
   Alternatively you can add the `--recursive` switch to the `git clone` command in order to tell git to checkout also the submodules.
