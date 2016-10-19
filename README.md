@@ -1,5 +1,6 @@
 # LT Courses Code Repository
-Source code of projects related to courses taught by LT (also student projects)
+Source code of projects related to courses taught by LT (also student projects).
+
 In general consider to add projects as _git submodules_. Submodules appear as folders in the git repository hierarchy (although with a changed icon in github) and refer to other git repositories (which might even be private).
 
 ## Working with submodules using `watson_speechandtext_demo` as example:
@@ -33,7 +34,6 @@ $ git submodule update
     ```
 
   Alternatively you can add the `--recursive` switch to the `git clone` command in order to tell git to checkout also the submodules.
-
     ```
 $ git clone --recursive https://github.com/tudarmstadt-lt/courses.git courses-lt
     ```
