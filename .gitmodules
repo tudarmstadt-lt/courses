@@ -13,3 +13,6 @@
 [submodule "qa-summer-15/1-WatsonSimpsons/source"]
 	path = qa-summer-15/1-WatsonSimpsons/source
 	url = https://github.com/tudarmstadt-lt/WatsonSimpsons.git
+[submodule "qa-summer-16/1-Movie-Character-Insights/source"]
+	path = qa-summer-16/1-Movie-Character-Insights/source
+	url = https://github.com/Thylossus/tud-movie-character-insights
