@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app>
+  <display-name>QA Project Information Network</display-name>
+  
+  <servlet>
+		<servlet-name>HomeServlet</servlet-name>
+		<servlet-class>servlets.HomeServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HomeServlet</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AboutServlet</servlet-name>
+		<servlet-class>servlets.AboutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AboutServlet</servlet-name>
+		<url-pattern>/about</url-pattern>
+	</servlet-mapping>
+
+  <servlet>
+		<servlet-name>SmallestTestServlet</servlet-name>
+		<servlet-class>servlets.SmallestTestServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SmallestTestServlet</servlet-name>
+		<url-pattern>/smallTest</url-pattern>
+	</servlet-mapping>
+	
+	
+  <servlet>
+		<servlet-name>EvaluationServlet</servlet-name>
+		<servlet-class>servlets.EvaluationServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EvaluationServlet</servlet-name>
+		<url-pattern>/evaluation</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>GraphVizAlchemyEntitiesServlet</servlet-name>
+		<servlet-class>servlets.GraphVizAlchemyEntitiesServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GraphVizAlchemyEntitiesServlet</servlet-name>
+		<url-pattern>/graphAlchemyEntities</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GraphVizRelExtractionServlet</servlet-name>
+		<servlet-class>servlets.GraphVizRelExtractionServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GraphVizRelExtractionServlet</servlet-name>
+		<url-pattern>/graphRelExtraction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GraphVizAlchemyAndRelExtractionServlet</servlet-name>
+		<servlet-class>servlets.GraphVizAlchemyAndRelExtractionServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GraphVizAlchemyAndRelExtractionServlet</servlet-name>
+		<url-pattern>/graphAlchemyAndRelExtraction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ExpandableGraphServlet</servlet-name>
+		<servlet-class>servlets.ExpandableGraphServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ExpandableGraphServlet</servlet-name>
+		<url-pattern>/expandable</url-pattern>
+	</servlet-mapping>
+  
+</web-app>

@@ -1,0 +1,23 @@
+{
+  "vertexIndexes": [
+    {"name": "vByName",
+      "propertyKeys": ["name"],
+      "composite": true,
+      "unique": true},
+    {"name": "vByLocation",
+      "propertyKeys": ["location"],
+      "composite": true,
+      "unique": false},
+    {"name": "vByHero",
+      "propertyKeys": ["hero"],
+      "composite": true,
+      "unique": true}
+    
+  ],
+  "edgeIndexes" :[
+    {"name": "eByTime",
+      "propertyKeys": ["time"],
+      "composite": true,
+      "unique": false}
+  ]
+}

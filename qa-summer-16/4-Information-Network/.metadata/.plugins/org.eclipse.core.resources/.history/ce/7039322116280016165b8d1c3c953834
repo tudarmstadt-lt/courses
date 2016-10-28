@@ -1,0 +1,53 @@
+package infnet;
+
+import java.io.IOException;
+import java.io.StringReader;
+
+import javax.json.Json;
+import javax.json.JsonObject;
+import javax.json.JsonReader;
+
+
+import org.eclipse.jetty.websocket.api.Session;
+import org.eclipse.jetty.websocket.api.annotations.OnWebSocketClose;
+import org.eclipse.jetty.websocket.api.annotations.OnWebSocketConnect;
+import org.eclipse.jetty.websocket.api.annotations.OnWebSocketError;
+import org.eclipse.jetty.websocket.api.annotations.OnWebSocketMessage;
+import org.eclipse.jetty.websocket.api.annotations.WebSocket;
+import org.jsoup.Jsoup;
+
+public class MyWebSocketHandler {
+
+    @OnWebSocketClose
+    public void onClose(int statusCode, String reason) {
+        System.out.println("Close: statusCode=" + statusCode + ", reason=" + reason);
+    }
+
+    @OnWebSocketError
+    public void onError(Throwable t) {
+        System.out.println("Error: " + t.getMessage());
+    }
+
+    @OnWebSocketConnect
+    public void onConnect(Session session) {
+        System.out.println("Connect: " + session.getRemoteAddress().getAddress());
+    }
+
+    @OnWebSocketMessage
+    public void onMessage(String msg) {
+        JsonReader jsonReader = Json.createReader(new StringReader(msg));
+        JsonObject message = jsonReader.readObject();
+        jsonReader.close();
+
+        String content = message.getJsonString("content").getString();
+
+        switch(message.getJsonString("type").getString()){
+        case "web content":
+            String clean_content = Jsoup.parse(content).text();
+            break;
+        case "server message":
+            System.out.println("Message from Addon: " + content);
+            break;
+        }
+    }
+}

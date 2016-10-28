@@ -1,0 +1,49 @@
+{
+  "propertyKeys": [
+    {"name": "name", "dataType": "String", "cardinality": "SINGLE"},
+    {"name": "location", "dataType": "String", "cardinality": "SINGLE"},
+    {"name": "hero", "dataType": "String", "cardinality": "SINGLE"},
+    {"name": "time", "dataType": "String", "cardinality": "SINGLE"},
+    {"name": "dummy", "dataType": "String", "cardinality": "SINGLE"}
+
+  ],
+  "vertexLabels": [
+    {"name": "person"},
+    {"name": "hashtag"},
+    {"name": "testVertexLabel"}
+  ],
+  "edgeLabels": [
+    {"name": "mentions", "multiplicity": "MULTI"},
+    {"name": "helps", "multiplicity": "MULTI"},
+    {"name": "testEdgeLabel", "multiplicity": "MULTI"}
+  ],
+  "vertexIndexes": [
+    {"name": "vByName",
+      "propertyKeys": ["name"],
+      "composite": true,
+      "unique": true},	
+    {"name": "vByDummy",
+      "propertyKeys": ["dummy"],
+      "composite": true,
+      "unique": false},	
+    {"name": "vByLocation",
+      "propertyKeys": ["location"],
+      "composite": true,
+      "unique": false},
+    {"name": "vByHero",
+      "propertyKeys": ["hero"],
+      "composite": true,
+      "unique": true}
+  ],
+  "edgeIndexes" :[
+    {"name": "eByTime",
+      "propertyKeys": ["time"],
+      "composite": true,
+      "unique": false},
+    {"name": "eByDummy",
+      "propertyKeys": ["dummy"],
+      "composite": true,
+      "unique": false}
+  ]
+
+}
