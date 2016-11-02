@@ -9,7 +9,7 @@
 	url = https://github.com/tudarmstadt-lt/watsondemo.git
 [submodule "qa-summer-15/2-WatsonTravel"]
 	path = qa-summer-15/2-WatsonTravel
-	url = git@github.com:tudarmstadt-lt/WatsonTravel.git
+	url = https://github.com/tudarmstadt-lt/WatsonTravel.git
 [submodule "qa-summer-15/1-WatsonSimpsons/source"]
 	path = qa-summer-15/1-WatsonSimpsons/source
 	url = https://github.com/tudarmstadt-lt/WatsonSimpsons.git
